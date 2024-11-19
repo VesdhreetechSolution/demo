@@ -2,11 +2,11 @@ package com.pd.clinic.service;
 
 import java.util.List;
 
-import org.hibernate.usertype.UserType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.pd.clinic.entity.User;
+import com.pd.clinic.entity.UserType;
 import com.pd.clinic.repository.UserTypeRepository;
 import com.pd.clinic.userinfo.ErrorResponse;
 

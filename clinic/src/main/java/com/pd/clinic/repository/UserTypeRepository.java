@@ -1,6 +1,5 @@
 package com.pd.clinic.repository;
 
-import org.hibernate.usertype.UserType;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
@@ -8,7 +7,7 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.pd.clinic.entity.User;
+import com.pd.clinic.entity.UserType;
 
 @Repository
 public interface UserTypeRepository extends JpaRepository<UserType, String>{
