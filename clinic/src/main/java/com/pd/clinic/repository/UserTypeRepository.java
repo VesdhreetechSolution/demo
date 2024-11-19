@@ -15,6 +15,8 @@ public interface UserTypeRepository extends JpaRepository<UserType, String>{
 	@Query(value ="select * from user_type where id:userId",nativeQuery = true)
 	UserType findByUserTypeId(@Param("userId") String UserId);
 
+	
+	//just for test
 	@Transactional
 	@Modifying
 	@Query(value = "delete from user_type where id=:userId", nativeQuery = true)
