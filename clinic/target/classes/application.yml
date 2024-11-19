@@ -1,0 +1,47 @@
+#info:
+#  build:
+#    artifact: 'clinic'
+#    name: 'clinic'
+#    description: 'Clinic management software'
+#    version: '0.0.1-SNAPSHOT'
+#server:
+#  port: ${APP_SERVER_PORT:8086}
+#  tomcat:
+#    relaxed-query-chars:
+#    - '{'
+#    - '}'
+#spring:
+#  mvc:
+#    view:
+#      prefix: /WEB-INF/views/
+#      suffix: .jsp
+#  jackson:
+#    serialization:
+#      fail-on-empty-beans: false
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/clinic
+#    username: root
+#    password: 1234
+#  liquibase:
+#    enabled: false
+#    change-log: classpath:/db/changelog/changelog-master.xml
+#  application:
+#    name: 'clinic'
+#  cloud:
+#    compatibility-verifier:
+#      enabled: false
+#  main:
+#    allow-bean-definition-overriding: true
+#ribbon:
+#  eureka:
+#    enabled: true
+#eureka:
+#  instance:
+#    non-secure-port: ${server.port}
+#    non-secure-port-enabled: true
+#    secure-port-enabled: false
+#  client:
+#    registerWithEureka: true
+#    fetchRegistry: true
+#    service-url:
+#      defaultZone: http://${DISCOVERY_USERNAME:test}:${DISCOVERY_PASSWORD:test}@${DISCOVERY_HOST:localhost}:${DISCOVERY_PORT:8761}/eureka
